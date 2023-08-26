@@ -7,6 +7,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -15,10 +17,11 @@ import lombok.NoArgsConstructor;
 public class Article {
     @Id
     private String articleId;
+    private String userId;
     private String title;
     private String content;
-    private String Author;
     private Status status;
-    private String creationDate;
-    private String lastModificationDate;
+    private Date creationDate;
+    private Date lastModificationDate;
+    private String currentVersionId;
 }

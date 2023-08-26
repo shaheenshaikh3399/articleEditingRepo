@@ -1,4 +1,8 @@
 package com.example.articleservice.service;
 
-public class ArticleService {
+import com.example.articleservice.dto.ArticleDto;
+import com.example.articleservice.entity.Article;
+
+public interface ArticleService {
+    ArticleDto createArticle(Article article);
 }
